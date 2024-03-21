@@ -6,6 +6,19 @@ Link to Project : https://docs.google.com/document/d/156CmjwOFb32ouTcxEMruUROF__
 
 How to install: pnpm install install ai @google/generative-ai openai ai prisma @prisma/client @pinecone-database/pinecone @clerk/nextjs @clerk/themes next-themes prettier eslint-config-prettier prettier-plugin-tailwindcss
 
+Create an .env.local file with the following API Keys:
+DATABASE_URL= mongodb
+CLERK_SECRET_KEY= Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY= Clerk
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/notes
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/notes
+
+OPENAI_API_KEY= OpenAI Key
+
+PINECONE_API_KEY= Pinecone API Key
+
 npm update
 npx shadcn-ui@latest init  
 npx prisma generate
