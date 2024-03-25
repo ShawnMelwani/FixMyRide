@@ -19,7 +19,7 @@ export default function Home() {
         </span>
       </div>
       <p className="max-w-prose text-center">
-        An intelligent AI app, built with Gemini AI,
+        An intelligent AI app, built with OpenAI API,
         Pinecone, Next.js, Shadcn UI, Clerk, and more.
       </p>
       <Button size="lg" asChild>

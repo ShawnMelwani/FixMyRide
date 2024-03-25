@@ -11,4 +11,4 @@ const pinecone = new Pinecone({
   apiKey,
 });
 
-export const notesIndex = pinecone.Index("nextjs-ai-app-Final-Project");
+export const notesIndex = pinecone.Index("fixmyride");
