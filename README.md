@@ -4,6 +4,8 @@ The project entails creating an intuitive website where users can describe their
 
 Link to Project : https://docs.google.com/document/d/156CmjwOFb32ouTcxEMruUROF__OCIV1zZDW6n-C5IJ4/edit?usp=sharing
 
+https://docs.google.com/spreadsheets/d/1h_Do586k0NvOonboKKXS65bsljQuaFtt8gWu482F_1Q/edit?usp=sharing
+
 How to install: pnpm install install ai @google/generative-ai openai ai prisma @prisma/client @pinecone-database/pinecone @clerk/nextjs @clerk/themes next-themes prettier eslint-config-prettier prettier-plugin-tailwindcss
 
 Create an .env.local file with the following API Keys:
