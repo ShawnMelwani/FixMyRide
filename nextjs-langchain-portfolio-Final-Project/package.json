@@ -1,0 +1,62 @@
+{
+  "name": "nextjs-langchain-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run generate && next build",
+    "generate": "npx ts-node ./scripts/generate.ts",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^4.30.0",
+    "@clerk/themes": "^2.0.0",
+    "@datastax/astra-db-ts": "^0.1.4",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@langchain/openai": "^0.0.13",
+    "@mui/icons-material": "^5.15.15",
+    "@t3-oss/env-nextjs": "^0.10.1",
+    "@tabler/icons-react": "^3.2.0",
+    "@types/web-push": "^3.6.3",
+    "@upstash/redis": "^1.28.2",
+    "ai": "^2.2.32",
+    "clsx": "^2.1.0",
+    "dotenv": "^16.4.1",
+    "langchain": "^0.1.11",
+    "lucide-react": "^0.320.0",
+    "next": "14.1.0",
+    "next-themes": "^0.2.1",
+    "openai": "^4.26.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.3",
+    "react-markdown": "^9.0.1",
+    "shadcn-ui": "^0.8.0",
+    "stream-chat": "^8.26.0",
+    "stream-chat-react": "^11.15.1",
+    "svix": "^1.21.0",
+    "tailwind-merge": "^2.3.0",
+    "ts-node": "^10.9.2",
+    "web-push": "^3.6.7",
+    "zod": "^3.23.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "overrides": {
+    "@langchain/core": "0.1.20"
+  }
+}
