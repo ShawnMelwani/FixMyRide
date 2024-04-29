@@ -1,44 +1,38 @@
+"use client";
 import me from "@/assets/me.png";
 import { H1 } from "@/components/ui/H1";
 import { H2 } from "@/components/ui/H2";
 import { Bot } from "lucide-react";
-import { Metadata } from "next";
 import Image from "next/image";
+import React from "react";
+import { cn } from "@/lib/cn";
+import { Vortex } from "@/components/ui/vortex";
 
-export const metadata: Metadata = {
-  title: "FixMyRide - Your personal AI Car Mechanic",
-};
 
 export default function Home() {
-  return (
-    <section className="space-y-16 bg-[url('/background.png')] bg-cover bg-center bg-no-repeat px-1 py-8">
-      <section className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
-        <div className="space-y-3">
-          <H1 className="text-center sm:text-start"> FixMyRide</H1>
-          <p className="text-center sm:text-start">
-            I&apos;m an AI personal mechanic. I provide expert solutions and tips to keep your vehicle running smoothly. 
-            From diagnostics to maintenance, I got you covered. Let&apos;s troubleshoot together!
+    return (
+      <div className="w-[calc(100%-4rem)] mx-auto rounded-md  h-screen overflow-hidden">
+        <Vortex
+          backgroundColor="black"
+          rangeY={800}
+          particleCount={500}
+          baseHue={120}
+          className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
+        >
+          <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
+            The hell is this?
+          </h2>
+          <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
+            This is chemical burn. It&apos;ll hurt more than you&apos;ve ever been
+            burned and you&apos;ll have a scar.
           </p>
-        </div>
-        <div className="flex justify-center max-w-[300px]"> {/* Adjusted max-width */}
-          <Image
-            src={me}
-            alt="A photo of me"
-            height={300}
-            width={300}
-            className="aspect-square rounded-full border-2 object-cover shadow-md dark:border-foreground"
-          />
-        </div>
-      </section>
-      <section className="space-y-3 text-center">
-        <H2>Ask the chatbot anything</H2>
-        <p>
-          Click the little <Bot className="inline pb-1" /> icon in the top bar
-          to activate the AI chat. You can ask the chatbot any question about your car
-          and it will find the relevant info on this website. The bot can even
-          provide links to pages you&apos;re looking for.
-        </p>
-      </section>
-    </section>
-  );
-}
+          <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
+            <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
+              Order now
+            </button>
+            <button className="px-4 py-2  text-white ">Watch trailer</button>
+          </div>
+        </Vortex>
+      </div>
+    );
+  }

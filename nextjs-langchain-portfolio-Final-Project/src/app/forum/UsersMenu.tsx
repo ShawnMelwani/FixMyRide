@@ -1,4 +1,4 @@
-import Button from "@/components/Button";
+import { Button } from "@/components/ui/moving-border";
 import LoadingButton from "@/components/LoadingButton";
 import useDebounce from "@/hooks/useDebounce";
 import { UserResource } from "@clerk/types";

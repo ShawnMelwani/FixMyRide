@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
 import { Message, useChat } from "ai/react";
 import { Bot, SendHorizontal, Trash, XCircle } from "lucide-react";
 import Link from "next/link";

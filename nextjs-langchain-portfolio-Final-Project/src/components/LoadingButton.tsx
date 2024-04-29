@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef } from "react";
 import { LoadingIndicator } from "stream-chat-react";
-import Button from "./Button";
+import { Button } from "@/components/ui/moving-border";
 
 interface LoadingButtonProps extends ComponentPropsWithoutRef<"button"> {
   loading: boolean;
