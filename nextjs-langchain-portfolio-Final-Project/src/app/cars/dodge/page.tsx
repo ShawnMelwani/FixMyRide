@@ -18,7 +18,7 @@ export default function Dodge() {
           <p className="mb-4">
             <strong>Worst Model Year:</strong> 2002 <br />
             <strong>Most Complaints:</strong> Dodge RAM 1500 <br />
-            CarComplaints.com has 26,238 complaints on file for Dodge vehicles. <br />
+            FixMyRide has 26,238 complaints on file for Dodge vehicles. <br />
             The worst models are the 2000 Intrepid, 2009 Journey, 2002 Ram 1500, 2013 Dart, and the 2011 Ram 1500.
           </p>
           <p>Click on a model below for more information:</p>

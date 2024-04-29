@@ -18,7 +18,7 @@ export default function GMC() {
           <p className="mb-4">
             <strong>Worst Model Year:</strong> 2015 <br />
             <strong>Most Complaints:</strong> GMC Sierra 1500 <br />
-            CarComplaints.com has 4,958 complaints on file for GMC vehicles. <br />
+            FixMyRide has 4,958 complaints on file for GMC vehicles. <br />
             The worst models are the 2008 Acadia, 2015 Sierra 1500, 2015 Yukon, 2014 Sierra 1500, and the 2010 Terrain.
           </p>
           <p>Click on a model below for more information:</p>

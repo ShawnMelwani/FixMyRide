@@ -18,7 +18,7 @@ export default function Audi() {
           <p className="mb-4">
             <strong>Worst Model Year:</strong> 2014 <br />
             <strong>Most Complaints:</strong> Audi A4 <br />
-            CarComplaints.com has 1,098 complaints on file for Audi vehicles. <br />
+            FixMyRide has 1,098 complaints on file for Audi vehicles. <br />
             The worst models are the 2014 Q5, 2015 A3, 2017 Q7, 2011 A4, and the 2013 A4.
           </p>
           <p>Click on a model below for more information:</p>

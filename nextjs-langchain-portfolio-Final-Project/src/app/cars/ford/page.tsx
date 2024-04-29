@@ -18,7 +18,7 @@ export default function Ford() {
           <p className="mb-4">
             <strong>Worst Model Year:</strong> 2002 <br />
             <strong>Most Complaints:</strong> Ford Explorer <br />
-            CarComplaints.com has 49,183 complaints on file for Ford vehicles. <br />
+            FixMyRide has 49,183 complaints on file for Ford vehicles. <br />
             The worst models are the 2002 Explorer, 2004 Explorer, 2014 Focus, 2012 Focus, and the 2014 Escape.
           </p>
           <p>Click on a model below for more information:</p>

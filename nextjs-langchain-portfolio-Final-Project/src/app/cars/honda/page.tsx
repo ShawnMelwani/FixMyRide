@@ -18,7 +18,7 @@ export default function Honda() {
           <p className="mb-4">
             <strong>Worst Model Year:</strong> 2008 <br />
             <strong>Most Complaints:</strong> Honda Accord <br />
-            CarComplaints.com has 30,351 complaints on file for Honda vehicles. <br />
+            FixMyRide has 30,351 complaints on file for Honda vehicles. <br />
             The worst models are the 2003 Accord, 2001 Civic, 2004 Accord, 2016 Civic, and the 2002 Accord.
           </p>
           <p>Click on a model below for more information:</p>

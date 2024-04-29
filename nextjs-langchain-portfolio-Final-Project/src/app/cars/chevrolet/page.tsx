@@ -18,7 +18,7 @@ export default function Chevrolet() {
           <p className="mb-4">
             <strong>Worst Model Year:</strong> 2005 <br />
             <strong>Most Complaints:</strong> Chevrolet Impala <br />
-            CarComplaints.com has 33,868 complaints on file for Chevrolet vehicles. <br />
+            FixMyRide has 33,868 complaints on file for Chevrolet vehicles. <br />
             The worst models are the 2017 Silverado 1500, 2011 Cruze, 2011 Equinox, 2007 Silverado, and the 2010 Equinox.
           </p>
           <p>Click on a model below for more information:</p>

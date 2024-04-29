@@ -18,7 +18,7 @@ export default function Genesis() {
           <p className="mb-4">
             <strong>Worst Model Year:</strong> 2020 <br />
             <strong>Most Complaints:</strong> Genesis G90 <br />
-            CarComplaints.com has 21 complaints on file for Genesis vehicles. <br />
+            FixMyRide has 21 complaints on file for Genesis vehicles. <br />
             The worst models are the 2018 G90, 2020 G70, 2018 G80, 2022 GV70, and the 2021 GV80.
           </p>
           <p>Click on a model below for more information:</p>

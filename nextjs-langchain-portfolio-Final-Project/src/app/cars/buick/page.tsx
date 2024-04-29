@@ -18,7 +18,7 @@ export default function Buick() {
           <p className="mb-4">
             <strong>Worst Model Year:</strong> 2008 <br />
             <strong>Most Complaints:</strong> Buick LeSabre <br />
-            CarComplaints.com has 3,540 complaints on file for Buick vehicles. <br />
+            FixMyRide has 3,540 complaints on file for Buick vehicles. <br />
             The worst models are the 2008 Enclave, 2011 LaCrosse, 2010 Enclave, 2009 Enclave, and the 2011 Enclave.
           </p>
           <p>Click on a model below for more information:</p>

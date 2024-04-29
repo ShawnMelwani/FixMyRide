@@ -18,7 +18,7 @@ export default function BMW() {
           <p className="mb-4">
             <strong>Worst Model Year:</strong> 2013 <br />
             <strong>Most Complaints:</strong> BMW X5 <br />
-            CarComplaints.com has 1,042 complaints on file for BMW vehicles. <br />
+            FixMyRide has 1,042 complaints on file for BMW vehicles. <br />
             The worst models are the 2013 X3, 2011 X5, 2013 X5, 2007 335, and the 2007 328.
           </p>
           <p>Click on a model below for more information:</p>

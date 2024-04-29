@@ -18,7 +18,7 @@ export default function Chrysler() {
           <p className="mb-4">
             <strong>Worst Model Year:</strong> 2006 <br />
             <strong>Most Complaints:</strong> Chrysler Town & Country <br />
-            CarComplaints.com has 8,473 complaints on file for Chrysler vehicles. <br />
+            FixMyRide has 8,473 complaints on file for Chrysler vehicles. <br />
             The worst models are the 2015 200, 2002 Sebring, 2001 Sebring, 2011 Town & Country, and the 2013 200.
           </p>
           <p>Click on a model below for more information:</p>

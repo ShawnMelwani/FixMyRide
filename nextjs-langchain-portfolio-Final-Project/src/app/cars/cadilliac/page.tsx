@@ -18,7 +18,7 @@ export default function Cadillac() {
           <p className="mb-4">
             <strong>Worst Model Year:</strong> 2013 <br />
             <strong>Most Complaints:</strong> Cadillac SRX <br />
-            CarComplaints.com has 1,811 complaints on file for Cadillac vehicles. <br />
+            FixMyRide has 1,811 complaints on file for Cadillac vehicles. <br />
             The worst models are the 2012 SRX, 2010 SRX, 2011 SRX, 2013 SRX, and the 2009 CTS.
           </p>
           <p>Click on a model below for more information:</p>
