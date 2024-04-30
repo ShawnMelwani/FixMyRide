@@ -40,7 +40,7 @@ export default function Home() {
           />
 
           {/* Radial Gradient to prevent sharp edges */}
-          <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+          <div className="absolute inset-0 w-full h-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
           <div className="-mt-4 -ml-8 z-10">
             <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
               Your Personal AI Car Mechanic
@@ -57,19 +57,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
-          Software Engineer | FullStack Engineer
-        </p>
-        <div className="mt-4">
-          <Link href={"/courses"}>
-            <Button
-              borderRadius="1.75rem"
-              className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
-            >
-              Chekout Resume
-            </Button>
-          </Link>
-        </div> */}
       </div>
     </div>
   );
