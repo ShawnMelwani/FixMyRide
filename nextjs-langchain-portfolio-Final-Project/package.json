@@ -18,7 +18,7 @@
     "@langchain/openai": "^0.0.13",
     "@mui/icons-material": "^5.15.15",
     "@t3-oss/env-nextjs": "^0.10.1",
-    "@tabler/icons-react": "^3.2.0",
+    "@tabler/icons-react": "^3.3.0",
     "@tsparticles/engine": "^3.3.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.3.0",
