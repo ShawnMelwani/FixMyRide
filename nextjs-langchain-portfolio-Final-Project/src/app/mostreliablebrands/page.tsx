@@ -1,15 +1,29 @@
+"use client";
 import { H1 } from "@/components/ui/H1";
 import { H2 } from "@/components/ui/H2";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Car Reliability",
-  description: "Car reliability rankings and information.",
-};
+import React from "react";
+import {
+  TextRevealCard,
+  TextRevealCardDescription,
+  TextRevealCardTitle,
+} from "@/components/ui/text-reveal-card";
 
 export default function CarReliability() {
   return (
     <section className="space-y-8">
+      <div className="flex items-center justify-center bg-transparent h-[20rem] rounded-2xl w-full">
+      <TextRevealCard
+        text="You know the road"
+        revealText="I know the reliability"
+      >
+        <TextRevealCardTitle>
+          Cut straight to the chase
+        </TextRevealCardTitle>
+        <TextRevealCardDescription>
+          Most Reliable Cars
+        </TextRevealCardDescription>
+      </TextRevealCard>
+    </div>
       <div className="max-w-3xl mx-auto">
         <H1>Car Reliability Rankings</H1>
         <section className="space-y-6">
