@@ -254,11 +254,11 @@ export default function CarReliability() {
       >
         Hover Over <br /> the cars
       </motion.h1>
-    </LampContainer>
-      
       <div className="flex flex-row items-center justify-center mb-10 w-full mt-0">
         <AnimatedTooltip items={cars} />
       </div>
+    </LampContainer>
+      
     </div>
   );
 }

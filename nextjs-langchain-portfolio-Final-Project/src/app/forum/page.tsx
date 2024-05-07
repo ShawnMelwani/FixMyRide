@@ -33,15 +33,15 @@ export default function ChatPage() {
 
   if (!chatClient || !user) {
     return (
-      <div className="flex h-screen items-center justify-center bg-gray-100 dark:bg-black">
+      <div className="flex w-screen h-screen items-center justify-center bg-gray-100 dark:bg-black">
         <LoadingIndicator size={40} />
       </div>
     );
   }
 
   return (
-    <div className="h-screen bg-gray-100 text-black dark:bg-black dark:text-white xl:px-20 xl:py-8">
-      <div className="m-auto flex h-full min-w-[350px] max-w-[1600px] flex-col shadow-sm">
+    <div className="w-screen h-screen bg-gray-100 dark:bg-black dark:text-white xl:px-20 xl:py-8">
+      <div className="flex h-full w-full flex-col shadow-sm overflow-hidden">
         <Chat
           client={chatClient}
           i18nInstance={i18Instance}
@@ -49,7 +49,7 @@ export default function ChatPage() {
             theme === "dark" ? "str-chat__theme-dark" : "str-chat__theme-light"
           }
         >
-          <div className="flex justify-center border-b border-b-[#DBDDE1] p-3 md:hidden">
+          <div className="flex justify-center border-b border-gray-200 p-3 md:hidden">
             <button onClick={() => setChatSidebarOpen(!chatSidebarOpen)}>
               {!chatSidebarOpen ? (
                 <span className="flex items-center gap-1">
@@ -60,7 +60,7 @@ export default function ChatPage() {
               )}
             </button>
           </div>
-          <div className="flex h-full flex-row overflow-y-auto">
+          <div className="flex h-full w-full flex-row overflow-hidden">
             <ChatSidebar
               user={user}
               show={isLargeScreen || chatSidebarOpen}

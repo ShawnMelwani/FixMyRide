@@ -25,7 +25,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <ClerkProvider>
-        <ThemeProvider attribute="class">
+        <ThemeProvider attribute="class"
+        defaultTheme="system">
           <Navbar/>
           <main className="mx-auto max-w-full px-3 py-10">{children}</main>
           <Footer />
