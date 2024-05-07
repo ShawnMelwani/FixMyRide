@@ -1,61 +1,67 @@
 "use client";
-import me from "@/assets/me.png";
-import { H1 } from "@/components/ui/H1";
-import { H2 } from "@/components/ui/H2";
-import { Bot } from "lucide-react";
-import { Metadata } from "next";
-import Image from "next/image";
 import React from "react";
-import { cn } from "@/lib/cn";
 import { Vortex } from "@/components/ui/vortex";
-import { Button } from "@/components/ui/moving-border";
 import Link from "next/link";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import { motion } from "framer-motion";
+import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 
 export default function Home() {
   return (
-    <div className="w-[calc(100%-4rem)] mx-auto rounded-md  h-[30rem] overflow-hidden">
-      <Vortex
-        backgroundColor="transparent"
-        className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
-      >
-        <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
-          FixMyRide
-        </h2>
+    <div className="w-[calc(100%-4rem)] mx-auto rounded-md h-[30rem] overflow-hidden">
+      <HeroHighlight className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full">
+        <motion.h1
+          initial={{
+            opacity: 0,
+            y: 20,
+          }}
+          animate={{
+            opacity: 1,
+            y: [20, -5, 0],
+          }}
+          transition={{
+            duration: 0.5,
+            ease: [0.4, 0.0, 0.2, 1],
+          }}
+          className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
+        >
+          In the world of auto repair, precision isn&apos;t just a goal, it&apos;s a necessity. <Highlight className="text-black dark:text-white">FixMyRide</Highlight>
+        </motion.h1>
+
         <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-        I provide expert solutions and tips to keep your vehicle running smoothly. 
-          From diagnostics to maintenance, I got you covered. Let&apos;s troubleshoot together!
+          
         </p>
+
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-        <Link href="/cars">
-        <div className="m-10 flex justify-center text-center">
-                  <HoverBorderGradient
-                    containerClassName="rounded-full"
-                    as="button"
-                    className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-4 py-3 px-6 text-lg"
-                  >
-                    <AceternityLogo />
-                    <span>Try Now</span>
-                  </HoverBorderGradient>
-                </div>
-        </Link>
-        <Link href="/forum">
-        <div className="m-10 flex justify-center text-center">
-                  <HoverBorderGradient
-                    containerClassName="rounded-full"
-                    as="button"
-                    className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-4 py-3 px-6 text-xl"
-                  >
-                    <AceternityLogo />
-                    <span>Forum</span>
-                  </HoverBorderGradient>
-                </div>
+          <Link href="/cars">
+            <div className="m-10 flex justify-center text-center">
+              <HoverBorderGradient
+                containerClassName="rounded-full"
+                as="button"
+                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-4 py-3 px-6 text-lg"
+              >
+                <AceternityLogo />
+                <span>Try Now</span>
+              </HoverBorderGradient>
+            </div>
+          </Link>
+          <Link href="/forum">
+            <div className="m-10 flex justify-center text-center">
+              <HoverBorderGradient
+                containerClassName="rounded-full"
+                as="button"
+                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-4 py-3 px-6 text-xl"
+              >
+                <AceternityLogo />
+                <span>Forum</span>
+              </HoverBorderGradient>
+            </div>
           </Link>
         </div>
-      </Vortex>
+      </HeroHighlight>
     </div>
-      );
-    }
+  );
+}
 
     const AceternityLogo = () => {
       return (
