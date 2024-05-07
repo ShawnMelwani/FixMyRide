@@ -190,7 +190,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://i.pinimg.com/736x/f0/03/6d/f0036d8f61728bcd2aec51c8df28b600.jpg"
+          src="https://cdn.discordapp.com/attachments/483502468018208768/1237486992070152354/timing-belt.jpeg?ex=663bd312&is=663a8192&hm=bb04882097d4687e9c803f8bf3f9089d2b96ee27215a6c639386e3582e5a4d5d&"
           alt="avatar"
           height="100"
           width="100"
@@ -205,7 +205,7 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <Image
-          src="https://i.pinimg.com/736x/f0/03/6d/f0036d8f61728bcd2aec51c8df28b600.jpg"
+          src="https://cdn.discordapp.com/attachments/483502468018208768/1237486991541665874/Hoses.webp?ex=663bd312&is=663a8192&hm=b7aafa7f42f1d74482590c0b70b1ad64fb781e46cdb038fb00d985014e528d78&"
           alt="avatar"
           height="100"
           width="100"
@@ -223,7 +223,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://i.pinimg.com/736x/f0/03/6d/f0036d8f61728bcd2aec51c8df28b600.jpg"
+          src="https://cdn.discordapp.com/attachments/483502468018208768/1237489362921328691/1458216-00-A_0255B1255D.png?ex=663bd547&is=663a83c7&hm=80fece2500b52f7f575ae5f8f4a4ec544ced11de3ee525f19884078b621af40c&"
           alt="avatar"
           height="100"
           width="100"
@@ -276,7 +276,7 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
       >
         <Image
-          src="https://i.pinimg.com/736x/f0/03/6d/f0036d8f61728bcd2aec51c8df28b600.jpg"
+          src="https://cdn.discordapp.com/attachments/483502468018208768/1237489554122866729/car-maintenance-guide.png?ex=663bd575&is=663a83f5&hm=f09a8cb985ba283efd1750b4ee89d92e5ff023200984ea5792e51af54b09a253&"
           alt="avatar"
           height="100"
           width="100"
@@ -298,10 +298,10 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "5,000 Mile Maintenance: Oil Change",
+    title: "5,000 Mile Maintenance: Oil Change & Tire Rotation",
     description: (
       <span className="text-sm">
-        Having your oil changed frequently protects your engine and keeps it operating smoothly.
+        Having your oil changed frequently protects your engine and keeps it operating smoothly while rotating tires lets them wear evenly.
       </span>
     ),
     header: <SkeletonOne />,
@@ -320,10 +320,10 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "50,000 Mile Maintenance – Shock and Strut Replacement",
+    title: "50,000 Mile Maintenance – Brake Pads, Fuel Filter & Inspection",
     description: (
       <span className="text-sm">
-        A vehicle that has driven 50,000 miles has likely oscillated over 88 million times. Not only do struts and shocks provide a smoother ride, they also give you more control behind the wheel and help improve stopping.
+        Replace brake pads and fuel filter, inspect exhaust, emissions, and suspension systems for optimal vehicle performance and safety.
       </span>
     ),
     header: <SkeletonThree />,
@@ -331,7 +331,7 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "60,000 Mile Maintenance – Belts, Hoses, and Tires",
+    title: "60,000 Mile Maintenance – Inspect Belts, Hoses, and Tires",
     description: (
       <span className="text-sm">
         Belts and hoses perform essential functions as part of your vehicle’s air conditioning, cooling, and charging systems. Due to constant exposure to heat, vibrations, and chemicals, over time belts and hoses are prone to cracks or leaks. While engine belts, drive belts, serpentine belts, and timing belts can be visually inspected and imperfections can be identified, hoses cannot.

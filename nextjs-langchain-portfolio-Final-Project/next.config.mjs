@@ -3,7 +3,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: ['i.pinimg.com']  // Add more domains as needed
+      domains: ['cdn.discordapp.com']  // Add more domains as needed
     },
   };
   

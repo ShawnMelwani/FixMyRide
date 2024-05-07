@@ -1,6 +1,6 @@
 import { UserButton } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
-import { Moon, Sun, Users } from "lucide-react";
+import { Users } from "lucide-react";
 import { useTheme } from "next-themes";
 import ThemeToggle from "@/components/ThemeToggle";
 interface MenuBarProps {
@@ -20,7 +20,6 @@ export default function MenuBar({ onUserMenuClick }: MenuBarProps) {
         <span title="Show users">
           <Users className="cursor-pointer" onClick={onUserMenuClick} />
         </span>
-        <ThemeToggle/>
       </div>
     </div>
   );
