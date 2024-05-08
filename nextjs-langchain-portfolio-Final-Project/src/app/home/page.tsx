@@ -1,66 +1,106 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
-
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 export default function Home() {
   return (
-    <div className="w-full rounded-md h-[30rem] overflow-hidden">
-      <HeroHighlight className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full">
-        <motion.h1
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: [20, -5, 0],
-          }}
-          transition={{
-            duration: 0.5,
-            ease: [0.4, 0.0, 0.2, 1],
-          }}
-          className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
-        >
-          In the world of auto repair, precision isn&apos;t just a goal, it&apos;s a necessity. <Highlight className="text-black dark:text-white">FixMyRide</Highlight>
-        </motion.h1>
+    <div className="w-full">
+        <div className="w-full rounded-md h-[30rem] overflow-hidden">
+            <HeroHighlight className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full">
+                <motion.h1
+                    initial={{
+                        opacity: 0,
+                        y: 20,
+                    }}
+                    animate={{
+                        opacity: 1,
+                        y: [20, -5, 0],
+                    }}
+                    transition={{
+                        duration: 0.5,
+                        ease: [0.4, 0.0, 0.2, 1],
+                    }}
+                    className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
+                >
+                    In the world of auto repair, precision isn't just a goal, it's a necessity. <Highlight className="text-black dark:text-white">FixMyRide</Highlight>
+                </motion.h1>
 
-        <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-          
-        </p>
+                <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
+                    
+                </p>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-          <Link href="/cars">
-            <div className="m-10 flex justify-center text-center">
-              <HoverBorderGradient
-                containerClassName="rounded-full"
-                as="button"
-                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-4 py-3 px-6 text-lg"
-              >
-                <AceternityLogo />
-                <span>Try Now</span>
-              </HoverBorderGradient>
-            </div>
-          </Link>
-          <Link href="/forum">
-            <div className="m-10 flex justify-center text-center">
-              <HoverBorderGradient
-                containerClassName="rounded-full"
-                as="button"
-                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-4 py-3 px-6 text-xl"
-              >
-                <AceternityLogo />
-                <span>Forum</span>
-              </HoverBorderGradient>
-            </div>
-          </Link>
+                <div className="flex flex-col sm:flex-row items-center gap-4 mt-1">
+                    <Link href="/cars">
+                        <div className="m-10 flex justify-center text-center">
+                            <HoverBorderGradient
+                                containerClassName="rounded-full"
+                                as="button"
+                                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-4 py-3 px-6 text-lg"
+                            >
+                                <AceternityLogo />
+                                <span>Try Now</span>
+                            </HoverBorderGradient>
+                        </div>
+                    </Link>
+                    <Link href="/forum">
+                        <div className="m-10 flex justify-center text-center">
+                            <HoverBorderGradient
+                                containerClassName="rounded-full"
+                                as="button"
+                                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-4 py-3 px-6 text-xl"
+                            >
+                                <AceternityLogo />
+                                <span>Forum</span>
+                            </HoverBorderGradient>
+                        </div>
+                    </Link>
+                </div>
+            </HeroHighlight>
         </div>
-      </HeroHighlight>
+        
+        <div className="h-[20rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+            <InfiniteMovingCards
+                items={testimonials}
+                direction="right"
+                speed="slow"
+            />
+        </div>
     </div>
-  );
+);
+
 }
+
+const testimonials = [
+  {
+    quote: "I was skeptical about using an AI to diagnose my car's engine issue, but FixMyRide was incredibly accurate. It saved me time and money, and I was back on the road faster than after a traditional garage visit!",
+    name: "Esteban Tinajero",
+    title: "Daily Commuter",
+  },
+  {
+    quote: "FixMyRide's AI mechanic is a game-changer. It detected a transmission problem that even my local mechanic had missed. Highly recommended for peace of mind!",
+    name: "Mario Campos",
+    title: "Car Enthusiast",
+  },
+  {
+    quote: "Using FixMyRide has made car maintenance so much easier. The AI not only diagnosed my issue but also guided me through the fixing process step-by-step. Brilliant tool for DIYers!",
+    name: "Moi Cerda",
+    title: "DIY Mechanic",
+  },
+  {
+    quote: "Never thought I'd trust a machine with my vintage car, but FixMyRide handled it with care and precision. The diagnostics are spot-on, saving me from costly misdiagnoses.",
+    name: "Grace Tan",
+    title: "Vintage Car Collector",
+  },
+  {
+    quote: "The future of car repair is here! FixMyRide's AI identified an elusive electrical problem that had been bugging me for months. Thanks to this platform, I avoided a major breakdown.",
+    name: "Shawn Melwani",
+    title: "Professional Driver",
+  },
+];
+
 
     const AceternityLogo = () => {
       return (
@@ -83,45 +123,4 @@ export default function Home() {
       );
     };
 
-  /*
-    <section className="space-y-16 bg-[url('/background.png')] bg-cover bg-center bg-no-repeat px-1 py-8">
-      { Place VortexDemo at the top }
-      <VortexDemo />
-
-      <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
-        <Spotlight
-          className="-top-40 left-0 md:left-60 md:-top-20"
-          fill="white"
-        />
-        <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0">
-          <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-            FixMyRide Your <br /> Personal AI Mechanic
-          </h1>
-          <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-            I provide expert solutions and tips to keep your vehicle running smoothly. 
-            From diagnostics to maintenance, I got you covered. Let&apos;s troubleshoot together!
-          </p>
-        </div>
-      </div>
-
-      <section className="text-center space-y-3">
-        <H1>FixMyRide</H1>
-        <p>
-          I provide expert solutions and tips to keep your vehicle running smoothly. 
-          From diagnostics to maintenance, I got you covered. Let&apos;s troubleshoot together!
-        </p>
-      </section>
-
-      <section className="space-y-3 text-center">
-        <H2>Ask the chatbot anything</H2>
-        <p>
-          Click the little <Bot className="inline pb-1" /> icon in the top bar
-          to activate the AI chat. You can ask the chatbot any question about your car
-          and it will find the relevant info on this website. The bot can even
-          provide links to pages you&apos;re looking for.
-        </p>
-      </section>
-    </section>
-  );
-}
-*/
+  

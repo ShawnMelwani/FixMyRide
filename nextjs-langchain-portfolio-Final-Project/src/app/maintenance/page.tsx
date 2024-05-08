@@ -116,7 +116,7 @@ const SkeletonTwo = () => {
     >
       {arr.map((_, i) => (
         <motion.div
-          key={"skelenton-two" + i}
+          key={"skeleton-two" + i}
           variants={variants}
           style={{
             maxWidth: Math.random() * (100 - 40) + 40 + "%",
