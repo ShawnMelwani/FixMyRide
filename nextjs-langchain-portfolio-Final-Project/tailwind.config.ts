@@ -54,10 +54,10 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      animation: { // Add animation styles
-        spotlight: "spotlight 2s ease-in-out .75s 1 forwards",
+      animation: {
+        spotlight: "spotlight 2s ease .75s 1 forwards",
       },
-      keyframes: { // Define keyframes for the animation
+      keyframes: {
         spotlight: {
           "0%": {
             opacity: 0,
@@ -65,7 +65,7 @@ const config: Config = {
           },
           "100%": {
             opacity: 1,
-            transform: "translate(-50%, -40%) scale(1)",
+            transform: "translate(-50%,-40%) scale(1)",
           },
         },
       },
