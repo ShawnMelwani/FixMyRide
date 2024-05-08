@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Vortex } from "@/components/ui/vortex";
 import Link from "next/link";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { motion } from "framer-motion";

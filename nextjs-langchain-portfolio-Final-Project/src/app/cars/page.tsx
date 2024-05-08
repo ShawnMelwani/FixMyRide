@@ -9,7 +9,7 @@ function cars() {
     </div>
   );
 }
-export const projects = [
+const projects = [
   {
     title: "Acura",
     description: "Luxury vehicle division of the Japanese automaker Honda, known for its advanced engineering and high-performance models.",
