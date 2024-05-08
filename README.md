@@ -6,22 +6,28 @@ Link to Project : https://docs.google.com/document/d/156CmjwOFb32ouTcxEMruUROF__
 
 https://docs.google.com/spreadsheets/d/1h_Do586k0NvOonboKKXS65bsljQuaFtt8gWu482F_1Q/edit?usp=sharing
 
-How to install: pnpm install install ai @google/generative-ai openai ai prisma @prisma/client @pinecone-database/pinecone @clerk/nextjs @clerk/themes next-themes prettier eslint-config-prettier prettier-plugin-tailwindcss
+How to install: npm i 
 
 Create an .env.local file with the following API Keys:
-DATABASE_URL= mongodb
-CLERK_SECRET_KEY= Clerk
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY= Clerk
+CLERK_SECRET_KEY=
+
+OPENAI_API_KEY=
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/notes
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/notes
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/home
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/home
 
-OPENAI_API_KEY= OpenAI Key
+ASTRA_DB_ENDPOINT=
+ASTRA_DB_APPLICATION_TOKEN=
+ASTRA_DB_COLLECTION="embeddings"
 
-PINECONE_API_KEY= Pinecone API Key
+UPSTASH_REDIS_REST_URL=
+UPSTASH_REDIS_REST_TOKEN=
 
-npm update
-npx shadcn-ui@latest init  
-npx prisma generate
-npm run dev
+NEXT_PUBLIC_STREAM_KEY=
+STREAM_SECRET=
+
+

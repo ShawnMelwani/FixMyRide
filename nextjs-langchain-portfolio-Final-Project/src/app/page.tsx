@@ -1,9 +1,5 @@
 "use client";
-import logo from "@/assets/logo.png";
-import { auth } from "@clerk/nextjs";
-import Image from "next/image";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 import React from "react";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";

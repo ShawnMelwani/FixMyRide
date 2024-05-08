@@ -9,7 +9,7 @@ export default function Navbar() {
   <div className="mx-auto flex max-w-4xl flex-wrap justify-between gap-3 px-3 py-4">
     <nav className="space-x-4 font-medium">
       <Link href="/home">Home</Link>
-      <Link href="/commoncarcomplaints">Common Car Complaints</Link>
+      <Link href="/trendsandtips">Trends & Tips</Link>
       <Link href="/mostreliablebrands">Most Reliable Brands</Link>
       <Link href="/cars">Cars</Link>
       <Link href="/forum">Forum</Link>
