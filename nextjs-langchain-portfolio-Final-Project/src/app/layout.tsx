@@ -27,9 +27,11 @@ export default function RootLayout({
       <ClerkProvider>
         <ThemeProvider attribute="class"
         defaultTheme="system">
-          <Navbar/>
-          <main className="mx-auto max-w-full px-3 py-3 flex-grow">{children}</main>
-          <Footer />
+          <div className="flex flex-col h-dvh">
+            <Navbar/>
+            <main className="mx-auto flex-grow">{children}</main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </ClerkProvider>
       </body>
