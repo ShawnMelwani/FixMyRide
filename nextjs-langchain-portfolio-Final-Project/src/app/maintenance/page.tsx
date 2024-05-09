@@ -190,7 +190,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://cdn.discordapp.com/attachments/483502468018208768/1237486992070152354/timing-belt.jpeg?ex=663bd312&is=663a8192&hm=bb04882097d4687e9c803f8bf3f9089d2b96ee27215a6c639386e3582e5a4d5d&"
+          src="https://cdn.discordapp.com/attachments/483502468018208768/1237486992070152354/timing-belt.jpeg?ex=663e7612&is=663d2492&hm=742526e5a4076c27fe3a0df9a553e0715eb3dc6e00d930c4e80de804d596797b&"
           alt="avatar"
           height="100"
           width="100"
@@ -205,7 +205,7 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <Image
-          src="https://cdn.discordapp.com/attachments/483502468018208768/1237486991541665874/Hoses.webp?ex=663bd312&is=663a8192&hm=b7aafa7f42f1d74482590c0b70b1ad64fb781e46cdb038fb00d985014e528d78&"
+          src="https://cdn.discordapp.com/attachments/483502468018208768/1237486991541665874/Hoses.webp?ex=663e7612&is=663d2492&hm=9ebff597917dc5a278b2b818a2c699662a71cbfbefa4ed3844b0e390d3c3905c&"
           alt="avatar"
           height="100"
           width="100"
@@ -223,7 +223,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://cdn.discordapp.com/attachments/483502468018208768/1237489362921328691/1458216-00-A_0255B1255D.png?ex=663bd547&is=663a83c7&hm=80fece2500b52f7f575ae5f8f4a4ec544ced11de3ee525f19884078b621af40c&"
+          src="https://cdn.discordapp.com/attachments/483502468018208768/1237489362921328691/1458216-00-A_0255B1255D.png?ex=663e7847&is=663d26c7&hm=65766009a4a9ca4bc47757ed9f5d530194a3745b610e26eb623bb43a047a5628&"
           alt="avatar"
           height="100"
           width="100"
@@ -276,7 +276,7 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
       >
         <Image
-          src="https://cdn.discordapp.com/attachments/483502468018208768/1237489554122866729/car-maintenance-guide.png?ex=663bd575&is=663a83f5&hm=f09a8cb985ba283efd1750b4ee89d92e5ff023200984ea5792e51af54b09a253&"
+          src="https://cdn.discordapp.com/attachments/483502468018208768/1237489554122866729/car-maintenance-guide.png?ex=663e7875&is=663d26f5&hm=b3d160c99aa63aab71e6d62e4c8f209081361714aa0528cbb1fa2f05c2a800dd&"
           alt="avatar"
           height="100"
           width="100"

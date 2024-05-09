@@ -40,7 +40,7 @@ export default function ChatPage() {
   }
 
   return (
-    <div className="w-screen h-screen bg-gray-100 dark:bg-black dark:text-white xl:px-20 xl:py-8">
+    <div style={{ height: '90vh', width: '100vw' }} className="bg-gray-100 dark:bg-black dark:text-white xl:px-20 xl:py-8">
       <div className="flex h-full w-full flex-col shadow-sm overflow-hidden">
         <Chat
           client={chatClient}

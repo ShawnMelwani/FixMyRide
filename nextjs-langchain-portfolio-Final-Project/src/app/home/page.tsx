@@ -90,7 +90,7 @@ const testimonials = [
   },
   {
     quote: "Never thought I'd trust a machine with my vintage car, but FixMyRide handled it with care and precision. The diagnostics are spot-on, saving me from costly misdiagnoses.",
-    name: "Grace Tan",
+    name: "Henry Ngo",
     title: "Vintage Car Collector",
   },
   {

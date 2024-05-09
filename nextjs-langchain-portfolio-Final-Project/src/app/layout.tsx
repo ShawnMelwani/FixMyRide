@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
       <ClerkProvider>
         <ThemeProvider attribute="class"
-        defaultTheme="system">
+        defaultTheme="dark">
           <div className="flex flex-col h-dvh">
             <Navbar/>
             <main className="mx-auto flex-grow">{children}</main>
