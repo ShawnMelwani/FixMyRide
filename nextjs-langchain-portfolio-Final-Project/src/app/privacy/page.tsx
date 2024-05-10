@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <section className="space-y-6">
-      <div className="space-y-3">
-        <H1>Privacy Policy</H1>
-        <p>Last Updated: April 2024</p>
+    <section className="space-y-6 max-w-4xl w-full px-4">
+      <div className="flex flex-col items-center text-center">
+      <H1>Privacy Policy</H1>
+      <p>Last Updated: April 2024</p>
       </div>
       <div className="space-y-3">
         <H2>Introduction</H2>
@@ -82,7 +82,7 @@ export default function Page() {
         <H2>Contact Us</H2>
         <p>
           If you have any questions about this Privacy Policy, please contact us
-          at info@codinginflow.com.
+          at smelwani@csu.fullerton.edu
         </p>
       </div>
     </section>
